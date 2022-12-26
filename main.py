@@ -7,15 +7,21 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-alarm_group=config.get('groups', 'alarm_group')
 
 setup_logging(level=logging.INFO)
 app = Client(api_id=config.get('tg_api', 'api_id'),
              name=config.get('tg_api', 'name'),
              api_hash=config.get('tg_api', 'api_hash'),
-
              )
 db=TG_DB()
+alarm_group=''
+
+
+with app:
+    alarm_group_name = config.get('groups', 'alarm_group')
+    alarm_group = (app.get_chat(alarm_group_name)).id
+    logging.info("alarm_group:" +str( alarm_group))
+
 
 
 @app.on_message()

@@ -15,8 +15,8 @@ api_hash= 123456789012345678901234567890123
 name = my
 
 [groups]
-;告警群号
-alarm_group= -123456789
+;告警转发到的群
+alarm_group= https://t.me/+pxxxxxxxxxxx
 
 [db_config]
 db_name = ./tg_bot.db
