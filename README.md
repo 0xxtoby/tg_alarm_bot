@@ -2,7 +2,14 @@
 
 使用[Pyrogram](https://github.com/pyrogram/pyrogram)框架实现Telegram 客户端
 
-## 使用
+##运行
+```
+git clone https://github.com/0xxtoby/tg_alarm_bot
+cd tg_alarm_bot
+pip install -r requirements.txt
+```
+
+### 配置
 
 配置config.ini
 
@@ -21,8 +28,13 @@ alarm_group= https://t.me/+pxxxxxxxxxxx
 [db_config]
 db_name = ./tg_bot.db
 ```
+### 运行
+```
+python mian.py
+```
 
-## 功能
+## 实现功能功能
+在告警转发群中进行控制
 
 ```
 /rule 查看规则列表
