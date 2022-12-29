@@ -2,7 +2,7 @@
 
 使用[Pyrogram](https://github.com/pyrogram/pyrogram)框架实现Telegram 客户端
 
-##运行
+## 下载
 ```
 git clone https://github.com/0xxtoby/tg_alarm_bot
 cd tg_alarm_bot
@@ -10,8 +10,9 @@ pip install -r requirements.txt
 ```
 
 ### 配置
+#### 1、创建告警群组
 
-配置config.ini
+#### 2、配置config.ini
 
 ```
 [tg_api]
