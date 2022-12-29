@@ -1,6 +1,9 @@
-# TG群组、频道敏感词检测  转发到告警群
+# Telegram 告警机器人 
 
-使用[Pyrogram](https://github.com/pyrogram/pyrogram)框架实现Telegram 客户端
+TG群组、频道敏感词检测  转发到告警群
+
+使用[Pyrogram](https://github.com/pyrogram/pyrogram)框架实现Telegram 客户端，TG机器人存在进群加群限制，所以需要普通客户端框架。
+
 
 ## 下载
 ```
